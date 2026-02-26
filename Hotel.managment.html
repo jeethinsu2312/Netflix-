@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grand Palace Hotel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .room-card {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+
+        .btn {
+            background-color: #2c3e50;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #f1c40f;
+            color: black;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        form input, form select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        form button {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #f1c40f;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Grand Palace Hotel</h1>
+    <p>Your Comfort is Our Priority</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#rooms">Rooms</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome to Grand Palace Hotel</h2>
+    <p>Experience luxury and comfort at affordable prices. We offer world-class services and premium rooms.</p>
+</section>
+
+<section id="rooms">
+    <h2>Our Rooms</h2>
+
+    <div class="room-card">
+        <h3>Single Room</h3>
+        <p>Price: $100 per night</p>
+        <p>Includes 1 Bed, Free WiFi, AC</p>
+        <a href="#booking" class="btn">Book Now</a>
+    </div>
+
+    <div class="room-card">
+        <h3>Double Room</h3>
+        <p>Price: $180 per night</p>
+        <p>Includes 2 Beds, Free WiFi, AC, TV</p>
+        <a href="#booking" class="btn">Book Now</a>
+    </div>
+
+    <div class="room-card">
+        <h3>Suite</h3>
+        <p>Price: $300 per night</p>
+        <p>Luxury Suite with Living Area, WiFi, AC, TV, Mini Bar</p>
+        <a href="#booking" class="btn">Book Now</a>
+    </div>
+</section>
+
+<section id="booking">
+    <h2>Room Booking</h2>
+    <form>
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Room Type:</label>
+        <select required>
+            <option>Single Room</option>
+            <option>Double Room</option>
+            <option>Suite</option>
+        </select>
+
+        <label>Check-in Date:</label>
+        <input type="date" required>
+
+        <label>Check-out Date:</label>
+        <input type="date" required>
+
+        <button type="submit">Submit Booking</button>
+    </form>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@grandpalacehotel.com</p>
+    <p>Phone: +1 234 567 890</p>
+    <p>Address: 123 Main Street, City, Country</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Grand Palace Hotel. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
